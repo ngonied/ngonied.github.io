@@ -1,5 +1,7 @@
 .jumbotron {
   margin-bottom: 0 !important;
+  position: relative;
+  margin-top: 50px !important;
 }
 #slider1 {
   position: relative;
@@ -29,7 +31,8 @@
 }
 .contact-info {
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 15% !important;
+  margin-bottom: 15% !important;
 
   font-size: 1.2em;
 }
