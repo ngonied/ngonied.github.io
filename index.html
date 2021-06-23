@@ -87,8 +87,7 @@
       </div>
     </div>
     <!--Carousel starts here-->
-
-    <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+    <div id = "carousel-handler"><div id="slider1" class="carousel slide mb-5" data-ride="carousel">
       <div class="carousel-inner" id="#home-section">
         <ol class="carousel-indicators">
           <li class="active" data-target="#slider1" data-slide-to="0"></li>
@@ -155,7 +154,8 @@
       ><a href="#slider1" class="carousel-control-next" data-slide="next"
         ><span class="carousel-control-next-icon"></span>
       </a>
-    </div><hr>
+    </div></div>
+    <hr>
     <!--services section starts here-->
     <div class="container container-fluid ">
       <h2 class="section-title"><strong>My Services</strong></h2>
@@ -222,7 +222,21 @@
 </div>
 <br></footer>
 <hr>
-
+<script>
+  function myFunction(x, element) {
+    if (x.matches) { // If media query matches
+      document.getElementById("carousel-handler").style.display = "none"
+    } else {
+      document.getElementById("carousel-handler").style.display = "block";
+      
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 576px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+  
+  </script>
     <script src="./Js/jquery.js"></script>
    
     <script src="./Js/bootstrap.bundle.min.js"></script>
