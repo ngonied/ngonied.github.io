@@ -81,7 +81,7 @@
       id="#landing"
     >
       <div class="container">
-        <h1 class="display-4">Hello! I am Ngonidzashe Chizororo.</h1>
+        <h1 class="display-4" id = "title">Hello! I am Ngonidzashe Chizororo.</h1>
         <p class="lead">I am a Web , Python and Django Backend Developer!</p>
         <p><a class="btn btn-primary btn-lg" role="button"> Contact me</a></p>
       </div>
@@ -225,7 +225,8 @@
 <script>
   function myFunction(x, element) {
     if (x.matches) { // If media query matches
-      document.getElementById("carousel-handler").style.display = "none"
+      document.getElementById("carousel-handler").style.display = "none";
+      document.getElementById("title").style.fontSize = "0.8em";
     } else {
       document.getElementById("carousel-handler").style.display = "block";
       
